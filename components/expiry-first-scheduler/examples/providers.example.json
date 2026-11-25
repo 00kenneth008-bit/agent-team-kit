@@ -1,0 +1,48 @@
+{
+  "providers": [
+    {
+      "daily_free_budget": {
+        "amount": 20,
+        "unit": "requests/day"
+      },
+      "endpoint": "https://api.example.invalid/v1",
+      "expiry": "2026-12-05",
+      "model": "example-model-a",
+      "name": "example-free-early",
+      "notes": "Fictional example: small budget, expires soonest, so it is used first."
+    },
+    {
+      "daily_free_budget": {
+        "amount": 50,
+        "unit": "requests/day"
+      },
+      "endpoint": "https://api.example.invalid/v1",
+      "expiry": "2027-01-15",
+      "model": "example-model-b",
+      "name": "example-free-mid",
+      "notes": "Fictional example: larger budget, mid expiry."
+    },
+    {
+      "daily_free_budget": {
+        "amount": 100,
+        "unit": "requests/day"
+      },
+      "endpoint": "https://api.example.invalid/v1",
+      "expiry": "2027-03-01",
+      "model": "example-model-c",
+      "name": "example-free-late",
+      "notes": "Fictional example: expires last, reached only after the earlier ones."
+    },
+    {
+      "daily_free_budget": {
+        "amount": 50,
+        "unit": "requests/day"
+      },
+      "endpoint": "https://api.example.invalid/v1",
+      "expiry": "2026-11-01",
+      "model": "example-model-a",
+      "name": "example-free-expired",
+      "notes": "Fictional example: already expired, so it is always excluded with reason 'expired'."
+    }
+  ]
+}

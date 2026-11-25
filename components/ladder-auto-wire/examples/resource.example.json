@@ -1,0 +1,15 @@
+{
+  "evidence": {
+    "at": "2026-11-20",
+    "detail": "Called the list-models endpoint and got HTTP 200; sent one test chat completion and got a reply.",
+    "type": "live_test"
+  },
+  "expiry": "2027-06-30",
+  "free_quota": {
+    "amount": 50,
+    "unit": "requests/day"
+  },
+  "model": "example-model-free",
+  "name": "Example Free Models",
+  "notes": "Fictional placeholder example. Do not use as a real provider record."
+}

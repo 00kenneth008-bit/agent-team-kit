@@ -1,0 +1,49 @@
+{
+  "providers": [
+    {
+      "evidence": {
+        "at": "2026-11-20",
+        "detail": "Called the list-models endpoint and got HTTP 200; sent one test chat completion and got a reply.",
+        "type": "live_test"
+      },
+      "expiry": "2027-01-15",
+      "free_quota": {
+        "amount": 50,
+        "unit": "requests/day"
+      },
+      "model": "example-model-free",
+      "name": "Example Free Models",
+      "status": "active"
+    },
+    {
+      "evidence": {
+        "at": "2026-11-18",
+        "detail": "Official pricing page states 100 free requests per day until 2027-06-30.",
+        "type": "official_page"
+      },
+      "expiry": "2027-06-30",
+      "free_quota": {
+        "amount": 100,
+        "unit": "requests/day"
+      },
+      "model": "sample-model-free",
+      "name": "Sample Open Models",
+      "status": "active"
+    },
+    {
+      "evidence": {
+        "at": "2026-01-10",
+        "detail": "Welcome email from the provider confirmed a 20 requests/day trial ending 2026-01-15.",
+        "type": "email"
+      },
+      "expiry": "2026-01-15",
+      "free_quota": {
+        "amount": 20,
+        "unit": "requests/day"
+      },
+      "model": "demo-model-trial",
+      "name": "Demo Trial Models",
+      "status": "degraded"
+    }
+  ]
+}
